@@ -5,13 +5,21 @@ import Container from "@mui/material/Container";
 
 const PageContainer = styled(Container)`
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
 `;
 
 const Home: NextPage = () => {
   return (
     <PageContainer>
-      <Image src="/comingsoon.gif" layout="fill" />
+      <img
+        src="/comingsoon.gif"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "contain",
+          maxHeight: "100vh",
+        }}
+      />
     </PageContainer>
   );
 };
